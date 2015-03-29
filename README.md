@@ -11,7 +11,7 @@ Assuming that it is a **Debian/Ubuntu** OS.
 
     sudo aptitude update
     sudo aptitude install ssh build-essential python-dev libmysqlclient-dev \
-    python-pip iptables-persistent screen
+        python-pip iptables-persistent screen
 
     pip install twisted pyasn1 pycrypto MySQL-python virtualenv virtualenvwrapper
 
@@ -42,7 +42,7 @@ We need to have some iptables rules in place in order to redirect SSH connection
 
 Also, it could be useful to configure default INPUT chain policy to **DROP** and accept connections only from specific sources based in geolocation. Using the service at **IP2Location** (http://www.ip2location.com/blockvisitorsbycountry.aspx) you can select a country and export the IPv4/IPv6 rules to use with iptables.
 
-On this repo I included a **/etc/iptables/rules.v4** file including Argentina's IP address ranges to be used with the **iptables-persistent** package previously installed.
+On this repo I included a **/etc/iptables/rules.v4** file containing Argentina's IP address ranges to be used with the **iptables-persistent** package previously installed.
 
 ## Install and configure Kippo
 
